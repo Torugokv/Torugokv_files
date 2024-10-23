@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 98vw;
+    min-height: 100vh;
+}
+
+.bg{
+    background-image: url(img/background.svg);
+    background-size: cover;
+    background-position: 50% 40%;
+    background-attachment: fixed;  /* Faz com que a imagem não se movimente junto
+    com o documento, dando a impressão de que o conteúdo desliza sobre o fundo. */
+}
+
+ul{
+    background-color: #ffa500;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+ul a{
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.3rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+.canto-esquerdo{
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.todos-produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.produto{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1rem;
+    height: 8rem;
+    width: 35rem;
+    box-shadow: 4px 4px 12px #aaa;
+    text-overflow: ellipsis;
+    transition: 50ms;
+    cursor: pointer;
+
+}
+
+.produto:hover{
+    transform: scale(1.010);
+    background-color: #fffaf0;
+}
+
+.produto img{
+    border-radius: 1rem;
+    width: 8rem;
+    height: 8rem;
+    padding: 5px;
+    pointer-events: none;       /*não reagir a qualquer evento de mouse */
+}
+
+
+.misc-produto{
+    max-width: 26rem;
+    pointer-events: none;       /*não reagir a qualquer evento de mouse */
+}
+
+.misc-produto h3{
+    padding: 3px 5px;
+    font-family: 'Roboto Slab', serif;;
+
+    max-width: 500px;           /*// Limite maximo do texto*/
+    white-space: nowrap;        /*// Removendo quebra de linha*/
+    overflow: hidden;           /*// Removendo a barra de rolagem*/
+    text-overflow: ellipsis;    /*// Adicionando "..." ao final do texto*/
+}
+
+.misc-produto label{
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow: hidden;           /*// Removendo barra de rolagem*/
+    text-overflow: ellipsis;    /*// Adicionando "..." ao final */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;      /*// Quantidade de linhas*/
+    -webkit-box-orient: vertical; 
+}
+
+
+/* label input:checked + span{
+    color: #ffa500;
+} */

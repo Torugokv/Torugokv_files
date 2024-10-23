@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class CalculadoraIMC {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
 
         Scanner leitorTeclado = new Scanner(System.in);
