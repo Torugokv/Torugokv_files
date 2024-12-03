@@ -2,10 +2,13 @@
 
 namespace app\classes;
 
-class Upload {
+use ValidationFile;
+
+abstract class Upload {
     
     private $file;
     protected $newName;
+
 
     public function __construct($file) {
         $this->file = $file;

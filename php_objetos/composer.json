@@ -1,15 +1,12 @@
 {
-    "name": "study/objetos",
-    "description": "Average stuff",
-    "type": "library",
-    "require": {
-        "composer/composer": "^2.7"
-    },
-    "license": "n",
+    "name": "torugokv/obj",
+    "description": "lego",
+    "type": "project",
     "autoload": {
         "psr-4": {
-            "app\\": "src/"
+            "Torugokv\\Obj\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "require": {}
 }

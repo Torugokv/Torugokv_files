@@ -1,20 +1,20 @@
 <?php
 
 namespace app\classes;
+class UploadFoto extends Upload{
 
-use app\classes\Upload;
+    const propriedade_teste = 'propriedade_teste';
 
-use app\traits\ValidationFile;
+    protected $extensions = ['png', 'jpg'];
+    private $upload;
 
-class UploadFoto extends Upload {
-
-    use ValidationFile;
-
-    private $extensions = ['png', 'jpg'];
+    public static function teste(){
+        return "teste";
+    }
 
     public function upload (){
 
-        return $this->teste();
+        //return $this->teste();
         // return "Gerou a foto {$this->rename()}";
     }
 }

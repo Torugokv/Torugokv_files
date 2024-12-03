@@ -12,8 +12,8 @@ trait ValidationFile {
         
     }
 
-    public function teste() {
-        return 'teste';
-    }
+    //public function teste() {
+    //return 'teste';
+    //}
 
 }
