@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Preenche a altura da janela */
+    text-align: center; /* Centraliza o texto */
+
+}
+.header {
+    display: flex;
+    flex-direction: column; /* Faz com que a logo e o título fiquem um embaixo do outro */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Aumenta o tamanho da logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #000000;
+    margin: 0;
+}
+
+.links {
+    margin-top: 20px; /* Adiciona um espaço entre o título e os links */
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block; /* Coloca os links em linhas separadas */
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+a:hover {
+color: #00aaff;
+}

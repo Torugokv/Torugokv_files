@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <h1>Página de Cadastro</h1>
+    <form action="{{ url_for('cadastro')}}" method="POST">
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td><input placeholder="Nome do produto"type="text" name="nome" required></td>
+            </tr>
+            <tr>
+                <td>Preço</td>
+                <td><input placeholder="0,00" type="text" name="preco" required></td>
+            </tr>
+            <tr>
+                <td>Quantidade</td>
+                <td><input type="number" name="quantidade" required></td>
+            </tr>
+            <tr>
+                <td>Descrição</td>
+                <td><input type="text" name="descricao"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

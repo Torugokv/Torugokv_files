@@ -1,17 +1,28 @@
 <?php
 
-require __DIR__ . "/vendor/autoload.php";
+require 'vendor/autoload.php';
 
-use app\classes\UploadFoto;
+class ShoppingCart {
 
-$upload = new UploadFoto('arquivo.png');
+    private $get = [];
+    private $product;
 
-// echo $upload->teste();
-//Atualizar o composer com o comando: :"composer dump-autoload";
+    public function __call($name, $value){
+        var_dump($name);
+    }
 
-// $upload->file('foto.png');
-// $upload->extension();
-// $upload->rename();
+    // public function __set($name, $value){
+    //     if(!property_exists($this, $name));
+    //     $this->get[$name][] = $value;
+    // }
 
-$upload->validation();
-echo $upload->upload();
+    // public function __get($name) {
+    //     var_dump($this->get[$name]);
+    // }
+
+}
+
+$shoppingCart = new ShoppingCart;
+$shoppingCart->product = 'Monitor';
+$shoppingCart->product = 'Placa de Video';
+$shoppingCart->product;

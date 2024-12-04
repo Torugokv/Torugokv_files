@@ -6,13 +6,20 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 450px) {
+    ul {
+        background-color: aqua;
+        height: 1rem;
+    }
+}
+
 body{
     min-width: 98vw;
     min-height: 100vh;
 }
 
 .bg{
-    background-image: url(img/background.svg);
+    background-image: url(../img/background.svg);
     background-size: cover;
     background-position: 50% 40%;
     background-attachment: fixed;  /* Faz com que a imagem não se movimente junto
@@ -23,17 +30,35 @@ ul{
     background-color: #ffa500;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
 }
 
-ul a{
+ul div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 2rem;
+}
+
+ul .conta{
+    text-decoration: none;
+    color: white;
+    background-color: #FF5400;
+    border-radius: 1rem;
+    padding: 10px 20px;
+}
+
+ul .logo{
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     font-size: 2.3rem;
     color: white;
-    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 .canto-esquerdo{
@@ -47,10 +72,9 @@ ul a{
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    margin-top: 30px;
+    margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-
 }
 
 .todos-produtos{
@@ -65,17 +89,15 @@ ul a{
     background-color: white;
     border-radius: 1rem;
     height: 8rem;
-    width: 35rem;
+    width: 100%;
     box-shadow: 4px 4px 12px #aaa;
     text-overflow: ellipsis;
     transition: 50ms;
     cursor: pointer;
-
 }
 
 .produto:hover{
     transform: scale(1.010);
-    background-color: #fffaf0;
 }
 
 .produto img{
@@ -85,7 +107,6 @@ ul a{
     padding: 5px;
     pointer-events: none;       /*não reagir a qualquer evento de mouse */
 }
-
 
 .misc-produto{
     max-width: 26rem;

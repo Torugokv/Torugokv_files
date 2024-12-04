@@ -12,7 +12,7 @@ body{
 }
 
 .bg{
-    background-image: url(img/background.svg);
+    background-image: url(../img/background.svg);
     background-size: cover;
     background-position: 50% 40%;   /* 50% à direita 40% abaixo */
     background-attachment: fixed;   /* Faz com que a imagem não se movimente junto
@@ -25,15 +25,36 @@ ul{
     width: 100%;
     height: 4rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul a{
+ul div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 2rem;
+}
+
+ul .conta{
+    text-decoration: none;
+    text-align: center;
+    padding-top: .5rem;
+    width: 9rem;
+    height: 2rem;
+    color: white;
+    background-color: #FF5400;
+    border-radius: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul .logo{
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     font-size: 2.3rem;
     color: white;
-    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 .canto-esquerdo{
@@ -43,15 +64,16 @@ ul a{
 }
 
 main{
+    position: fixed;
+    margin-top: 13rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20vh;
     height: 80vh;
     width: 100vw;
 }
 
-form{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,8 +81,9 @@ form{
     background-color: rgba(203, 203, 203, 0.274);
     backdrop-filter: blur(3px);
     border-radius: 1rem;
-    border: 3px solid white;
+    border: 2px solid #ffa500;
 }
+
 
 .titulo{
     font-family: sans-serif;
@@ -87,7 +110,7 @@ input{
     padding: 0.4rem;
 }
 
-.submit{
+.btn_submit{
     height: 35px;
     width: 220px;
     border: none;
@@ -100,7 +123,7 @@ input{
     cursor: pointer;
 }
 
-.submit:hover{
+.btn_submit:hover{
     transform: scale(1.03);
 }
 
@@ -110,7 +133,7 @@ hr{
     margin: 0.2rem 0px;
 }
 
-.sem-conta{
+.outro-conta{
     height: 35px;
     width: 220px;
     border: 1px solid gray;
