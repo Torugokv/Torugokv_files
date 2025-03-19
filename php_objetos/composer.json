@@ -1,12 +1,18 @@
 {
-    "name": "torugokv/obj",
-    "description": "lego",
-    "type": "project",
+    "name": "vitor/php_objetos",
     "autoload": {
         "psr-4": {
-            "Torugokv\\Obj\\": "src/"
-        }
+            "app\\": "app"
+        },
+        
+        "files":[
+            "helpers/functions.php"
+        ]
     },
-    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Torugokv"
+        }
+    ],
     "require": {}
 }

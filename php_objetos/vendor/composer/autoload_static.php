@@ -4,19 +4,23 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit425c0aec123cd1d9b5721207cd2b2944
+class ComposerStaticInitdf07a9273b971c5887e56640f1a4aeef
 {
+    public static $files = array (
+        'bdf697c7e5c020b755f641e5d6843a64' => __DIR__ . '/../..' . '/helpers/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
-        'T' => 
+        'a' => 
         array (
-            'Torugokv\\Obj\\' => 13,
+            'app\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Torugokv\\Obj\\' => 
+        'app\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
@@ -27,9 +31,9 @@ class ComposerStaticInit425c0aec123cd1d9b5721207cd2b2944
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit425c0aec123cd1d9b5721207cd2b2944::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit425c0aec123cd1d9b5721207cd2b2944::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit425c0aec123cd1d9b5721207cd2b2944::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitdf07a9273b971c5887e56640f1a4aeef::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitdf07a9273b971c5887e56640f1a4aeef::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitdf07a9273b971c5887e56640f1a4aeef::$classMap;
 
         }, null, ClassLoader::class);
     }
